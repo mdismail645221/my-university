@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-size: 1em;
 }
 .header{
     min-height: 100vh;
@@ -22,17 +23,29 @@ nav{
     flex: 1;
     text-align: right;
 }
+/* .nav-links ul li:hover{
+    background-color: #3adbe0;
+    opacity: .9;
+    color: #fff;
+} */
 nav ul li{
     list-style: none;
     padding: 8px 12px;
     display: inline-block;
     position: relative;
+    transition: 0.5s;
 }
 nav ul li a{
     color: #fff;
     text-decoration: none;
     font-size: 14px;
+    transition: 0.5s;
+    color: #fa34d9;
 }
+nav ul li a:hover{
+    color: #fff;
+}
+
 nav ul li::after{
     content: '';
     width: 0%;
@@ -58,7 +71,7 @@ nav ul li:hover::after{
     text-align: center;
 }
 .text-box h1{
-    font-size: 61px;
+    font-size: 3.8125rem;
 }
 .text-box p{
     margin: 10px 0 40px;
@@ -103,7 +116,7 @@ p{
 }
 @media (max-width:700px) {
     .text-box h1{
-        font-size: 20px;
+        font-size: 1.25rem;
     }
     .nav-links ul li{
         display: block;
@@ -120,7 +133,7 @@ p{
         /* display: inline-block; */
     }
     nav .fa{
-        font-size: 22px;
+        font-size: 1.26rem;
         display: block;
         margin: 10px;
         color: #fff;
@@ -199,7 +212,7 @@ h3{
     width: 100%;
     font-weight: 500;
     color: #fff;
-    font-size: 26px;
+    font-size: 1.27rem;
     bottom: 0;
     left: 50%;
     position:absolute;
@@ -217,7 +230,7 @@ h3{
     width: 80%;
     text-align: center;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 .facilities-row{
     display: flex;
@@ -255,7 +268,7 @@ h3{
 .tesmonials{
     width: 80%;
     margin:auto;
-    padding-top: 100px;
+    padding-top: 6.25rem;
     text-align: center;
 }
 .testimonials-col{
